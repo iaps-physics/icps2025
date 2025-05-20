@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "CISF 24"
-email: cisf24@ai-sf.it
-description: "Conferenza Italiana Studenti di Fisica 2024"
+title: "ICPS 2025"
+email: icps2025@iaps.info
+description: "International Conference of Physics Students"
 url: "https://ai-sf.it/cisf24" # the base hostname & protocol for your site
 locale: "it"
 
