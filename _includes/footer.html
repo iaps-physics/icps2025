@@ -1,0 +1,22 @@
+<footer>
+  <div class="container-smaller footer-container">
+  <div style="margin:0.5em">
+     {% for elm in site.data.footer.left %}
+		<h3 >{{elm.title}}</h3>
+
+		{{elm.content}}
+		{% endfor %}
+	</div>
+
+<div style="margin:1em; white-space: nowrap;">
+	{% for elm in site.data.footer.right %}
+	<h3 >{{elm.title}}</h3>
+
+	{{elm.content}}
+	{% endfor %}
+
+</div>
+
+
+  </div>
+</footer>

@@ -1,0 +1,21 @@
+left:
+  - title: "IAPS"
+    content: "The International Association of Physics Students (IAPS) is ...."
+right:
+  - title: "Contacts"
+    content: "For any questions, please contact us at ...."
+  - title: "Follow us"
+    content: "Follow us on our social media channels to stay updated with the latest news and events."
+    social:
+      - name: "Facebook"
+        icon: "fa-brands fa-facebook"
+        link: "https://www.facebook.com/IAPS.org"
+      - name: "Instagram"
+        icon: "fa-brands fa-instagram"
+        link: "https://www.instagram.com/iaps.org/"
+      - name: "Twitter"
+        icon: "fa-brands fa-twitter"
+        link: "https://twitter.com/IAPS_org"
+      - name: "LinkedIn"
+        icon: "fa-brands fa-linkedin-in"
+        link: "https://www.linkedin.com/company/iaps-org/"

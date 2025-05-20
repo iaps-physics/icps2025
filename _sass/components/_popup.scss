@@ -1,0 +1,133 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+.popup {
+    display: flex;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 9999;
+    box-sizing: border-box;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    right: -650px;
+    bottom: 0;
+    width: 600px;
+    max-width: calc(100% - 1em);
+    border-radius: 0.5em 0 0 0.5em;
+    overflow-y: hidden;
+    transition: all 0.3s ease;
+
+    
+    @media screen and (max-width: $medium) {
+        left: 0.5em;
+        top: 100%;
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+
+    &.active {
+        right: 0.5em;
+        top: 0.5em;
+        bottom: 0.5em;
+        @media screen and (max-width: $medium) {
+        top: 10vh;
+        bottom: 0;
+        }
+    }
+
+    .popup-close {
+        position: absolute;
+        right: 1.5em;
+        top: 1.5em;
+        cursor: pointer;
+
+        i {
+            color: white;
+            font-size: 36px;
+        }
+    }
+
+    .popup-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+
+
+        .popup-header {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+            @extend h3;
+            color: $accent2;
+            font-weight: 800;
+            gap: 0.2em;
+
+            margin-bottom: 1em;
+
+
+        }
+
+        .popup-content {
+
+
+            &::-webkit-scrollbar,
+            &.separated .column-content::-webkit-scrollbar {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                height: 100px;
+                width: 200px;
+                position: absolute;
+                bottom: 1em;
+                left: 0px;
+                width: 100%;
+                background-image: linear-gradient(rgba(#fff, 0) 0%, #fff 100%);
+            }
+
+            overflow-y: scroll;
+
+            h3 {
+                margin-top: 10px;
+            }
+
+            p {
+                margin-top: 5px;
+
+            }
+
+            &:last-child {
+                padding-bottom: 100px;
+            }
+        }
+
+    }
+}
+
+
+.gray {
+
+    background-color: $accent;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1000;
+    visibility:hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    &.active{
+        opacity: 0.8 !important;
+    }
+
+}

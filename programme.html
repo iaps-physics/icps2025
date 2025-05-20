@@ -1,0 +1,82 @@
+---
+layout: default
+title: Programme
+---
+<div class="container">
+<div class="columns">
+  {% for day in site.data.programme %}
+  <div>
+    <a data-bs-toggle="collapse" role="button" href="#container-{{giorno.giorno | replace: '/', ''}}" class="day-header">
+      {{day.day}}
+    </a>
+    <div class="day-container collapse" id="container-{{giorno.giorno | replace: '/', ''}}" data-day="{{day.day}}">
+    {% for event in day.events %}
+    {% if event.empty %}
+
+      <div class="duration-{{event.empty}}"></div>
+    {% else  %}
+<div class="event  duration-{{event.durata}}">
+
+    <div class="card card-event">
+
+
+                {% if event.location %}<div class="event-location" style="display: inline-flex; align-items:baseline; line-height: 110% ">
+                    <i class="material-symbols-rounded" style="width: 1.5em; font-size: 14pt; position:relative; top: 2px;">place</i>
+                    {{event.location}}
+                    {% if event.room %} - {{event.room}} {% endif %}
+                </div>
+                {% endif %}
+      <div class="event-time" style="display: inline-flex; align-items:baseline;">
+        <i class="material-symbols-rounded" style="width: 1.5em;font-size: 14pt; position:relative; top: 1px;">schedule</i>
+        {{event.time | date: ""}}
+      </div>
+
+      {% if event.type %}
+        <div class="event-type">
+            {{event.type}}
+        </div>
+        {% endif %}
+      <div class="event-title">
+        {{event.title}}
+      </div>
+
+      {% if event.info %}
+        <div class="event-info">
+            {{event.info}}
+        </div>
+        {% endif %}
+
+        {% if event.speakers %}
+    <div style="margin-top: 0.7em">
+
+      {% for speaker in event.speakers %}
+      <div class="flex-row speaker">
+        <i class="material-symbols-rounded">person</i>
+        <div>
+            <div class="speaker-name">{{speaker.name}}</div>
+            <div class="speaker-bio">{{speaker.role}}</div>
+        </div>
+      </div>
+      {% endfor %}
+      </div>
+        {% endif %}
+
+      {% if event.streaming %}
+      <div class="streaming" style="display: flex; justify-content: flex-end">
+          <a href="{{event.streaming}}" target="_blank" class="btn primary-background" style="display: flex; align-content: center; justify-content: center; padding: 0.3em 0.5em;width: fit-content; margin-top: 0.5em; font-size: 100%;"><i class="material-symbols-rounded" style="margin-right: 0.2em">
+            play_arrow
+          </i>Streaming</a>
+          </div>
+      {% endif %}
+        </div>
+    </div>
+    {% endif %}
+      {% endfor %}
+</div>
+
+    </div>
+
+  {% endfor %}
+
+</div>
+</div>

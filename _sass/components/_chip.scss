@@ -1,0 +1,19 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+.chip-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 0.3em;
+    column-gap: 0.5em;
+
+    .chip {
+        border-radius: 99999999px;
+        white-space: nowrap;
+        background-color: $accent;
+        padding: 0.35em 1em;
+        color: white;
+
+    }
+}

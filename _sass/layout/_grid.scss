@@ -1,0 +1,75 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+.flex-column-or-row {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $large) {
+        flex-direction: row;
+    }
+
+    &.reverse-on-small {
+        @media screen and (max-width: $large) {
+            flex-direction: column-reverse;
+        }
+
+    }
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.rows-or-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 2em;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    .card{
+        padding:2em;
+        margin: 0;
+    }
+}
+
+
+
+
+.items-center {
+    align-items: center !important;
+}
+
+

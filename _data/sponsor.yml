@@ -1,0 +1,9 @@
+- section: "IAPS Partners"
+  columns: 6
+  rows: 2
+  list:
+    - name: "Partner 1"
+      logo: "img/aisf_torino.png"
+      reduce: 1.5
+      span: 2
+    

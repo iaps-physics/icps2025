@@ -1,0 +1,25 @@
+---
+layout: default
+title: Partnership
+---
+
+<div class="container-auto">
+        <div class="sponsor-container">
+            {% for section in site.data.sponsor %}
+            <div class="sponsor-section c{{section.columns}} r{{section.rows}}">
+                <h3 class="text-accent">{{section.section}}</h3>
+                <div class="sponsor-list">
+                    {% for ente in section.list %}
+                    <div class="sponsor">
+                        <a href="{{ente.url}}" class="o1verlay-opacity">
+                            <img src="{{ente.logo}}"  style="{%if ente.reduce %} max-height: calc(6em - {{ente.reduce}}em); {% endif %}"  alt="{{ente.nome}}" class="img-sponsor">
+                        </a>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+
+    </div>
+</div>

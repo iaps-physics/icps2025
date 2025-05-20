@@ -1,0 +1,24 @@
+<div x-data="{ isOpen: false }">
+
+
+<nav class="navbar {{include.class}}" :class="{ 'raised': !isTop }">
+
+
+
+		<div class="site-name">
+			<a href="{{site.url}}/index.html">
+				<h2 class="text-white">ICPS 2025</h2> <!---<img src="{{site.url}}/{{site.data.generic.logo}}"/>-->
+			</a>
+		</div>
+
+
+		<div class="hamburger" :class="isOpen? 'active' : '' " @click="isOpen = !isOpen; document.getElementById('main').classList.toggle('active');">
+
+
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
+
+</div></div>

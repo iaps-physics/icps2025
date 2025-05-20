@@ -1,0 +1,15 @@
+rows:
+  - cards:
+    - title: Who?
+      content: |
+        400 students...
+    - title: Where?
+      content: |
+        In Switzerland...
+    - title: When?
+      content: |
+        In August 2025...
+  - cards:
+    - title: How?
+      content: |
+        With plenary sessions...

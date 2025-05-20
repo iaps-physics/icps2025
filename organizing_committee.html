@@ -1,0 +1,30 @@
+---
+layout: default
+title: Organizing Committee
+---
+<div class="container">
+    <div class="rows-or-columns">
+
+        {% for person in site.data.organizing_committee %}
+        <div class="card" style="width: 100%" >
+
+
+            <div class="card-header flex-row items-center" @click="expanded = ! expanded">
+
+
+                <div class="img-squiggly">
+                    <img src="{{person.photo}}">
+                </div>
+                <div>
+                    <div class="text-bold text-accent">{{person.name}}</div>
+                    <div class="text-smaller text-black">{{person.role}}</div>
+                </div>
+            </div>
+            <div class="card-body">
+                {{person.description}}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>

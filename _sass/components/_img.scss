@@ -1,0 +1,12 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+.img-squiggly {
+    max-width: 30%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

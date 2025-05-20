@@ -1,0 +1,128 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+@use '_reset.scss' as *;
+
+.shadow {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 40px 80px -10px, rgba(0, 0, 0, 0.4) 0px 20px 50px -20px;
+}
+
+
+
+a.animate:hover {
+    color: $accent2;
+}
+
+a.animate {
+    color: $accent;
+    text-align: right;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+    @extend .h4;
+    background-image: linear-gradient($accent, $accent2);
+    line-height: 120%;
+    background-size: 0% 3px;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-size: 100% 3px;
+    }
+
+}
+
+
+.primary-background{
+    background-color: $accent !important;
+    color: white !important;
+}
+
+
+
+.fullscreen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.fixed-fullscreen {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    padding: 0;
+
+}
+
+
+
+.spacer {
+    @media screen and (min-width: $large) {
+        height: 7em;
+    }
+}
+
+
+
+
+.overlay-opacity {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+
+
+
+.page-title {
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+
+    @media screen and (max-width: $large) {
+        margin-top: 3em;
+    }
+
+    h1 {
+        margin: 0px !important;
+        padding: 0;
+        color: white;
+
+    }
+}
+
+
+.text-white {
+    color: white;
+}
+
+
+
+.text-shadow {
+    text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+

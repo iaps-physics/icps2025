@@ -1,0 +1,73 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.btn {
+    background-color: $accent2;
+    box-sizing: border-box;
+    color: white;
+    border: none;
+    display: flex;
+
+    @extend .h3;
+
+
+    border-radius: 0.3em;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    &.btn-small {
+        @extend h4;
+        font-family: 'Poppins';
+        font-weight: 700;
+        padding: .2rem 1rem;
+    }
+
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+
+    &.btn-outline {
+        color: $accent2;
+        border: 3px solid $accent2;
+        background-color: transparent;
+    }
+
+}
+
+.btn:hover {
+    outline: 0;
+
+    &:not(.btn-outline) {
+
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 40px 80px -10px, rgba(0, 0, 0, 0.4) 0px 20px 50px -20px;
+    }
+
+    &.btn-outline {
+        background-color: $accent2;
+        color: white;
+    }
+}
+
+.btn:active {
+    background-color: color-mix(in hsl, $accent2 85%, black);
+
+    &:not(.btn-outline) {
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 40px 80px -10px, rgba(0, 0, 0, 0.4) 0px 10px 10px -10px;
+
+    }
+
+    &.btn-outline {
+        color: white;
+    }
+}
+

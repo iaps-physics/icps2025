@@ -1,0 +1,38 @@
+---
+layout: default
+title: Media Hosts
+---
+<div class="container-smaller">
+
+<div class="text-white text-bold">
+    {% for paragraph in site.data.media_hosts.descrizione%}
+<p style="font-size: 140%">{{paragraph}}</p>
+
+    {% endfor %}
+</div>
+
+<div class="two-columns">
+
+  {% for person in site.data.media_hosts.people %}
+<div class="card" style="padding:1em;">
+
+
+<div class="card-header flex-row items-center">
+
+  <div class="img-squiggly">
+    <img src="{{person.photo}}">
+  </div>
+  <div>
+    <h2 class="text-bold text-accent">{{person.nome}}</h2>
+  </div>
+</div>
+<div class="card-body">
+
+
+  {{person.descrizione}}
+</div>
+  </div>
+  {% endfor %}
+</div>
+
+</div>

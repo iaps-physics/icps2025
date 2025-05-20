@@ -1,0 +1,35 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+@use '../base' as *;
+
+  footer{
+  
+    position: relative;
+    bottom: 0;
+    z-index: 999;
+    margin-top: 5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: white;
+    border-radius: 0.5em 0.5em 0 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px -50px 100px -20px, rgba(0, 0, 0, 0.3) 0px -30px 80px -40px;
+  h3{
+    color: $accent2;
+  }
+  .footer-container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    // First column is 3 times second one
+    @media screen and (max-width: $large){
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+  }
+  }
+  
+  

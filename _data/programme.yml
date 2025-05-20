@@ -1,0 +1,143 @@
+- day: "Day 1"
+  events:
+    - time: "13:00 - 18:00"
+      title: "Registration"
+      location: TBD
+      room: TBD
+    - time: "18:00 - 19:30"
+      title: "Opening Ceremony"
+      speakers:
+        - name: TBD
+          role: "TBD"
+      location: TBD
+      room: TBD
+    - time: "19:30 - 20:30"
+      type: Guest Lecture
+      title: Guest Lecture 1
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+    - time: "20:30 - 24:00"
+      title: Host's Evening
+
+- day: "Day 2"
+  events:
+    - time: "09:30 - 13:00"
+      title: City Tours
+    - time: "13:00 - 14:00"
+      title: Lunch
+      location: TBD
+    - time: "14:00 - 15:00"
+      type: Guest Lecture
+      title: Guest Lecture 2
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+    - time: "15:00 - 18:00"
+      title: Icebreaker Challenges
+    - time: "18:00 - 19:00"
+      type: Guest Lecture
+      title: Keynote Lecture
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+    - time: "19:00 - 20:30"
+      title: Dinner
+    - time: "20:30 - 24:00"
+      title: Lounge Night
+
+- day: "Day 3"
+  events:
+    - type: Parallel Session
+      title: Student Talks
+      time: "09:30 - 11:00"
+    - title: Coffee Break
+      time: "11:00 - 11:30"
+    - title: Student Posters
+      time: "11:30 - 13:00"
+    - title: Lunch
+      time: "13:00 - 14:00"
+    - title: Guest Lecture 3 
+      time: "14:00 - 15:00"
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+      type: Guest Lecture
+    - type: Parallel Session
+      time: "15:00 - 17:00"
+      title: Workshops & Tutorials
+    - title: Excursion
+      time: "17:00 - 19:30"
+    - title: Dinner
+      time: "19:30 - 20:30"
+    - title: Lousanne Evening
+      time: "20:30 - 24:00"
+
+- day: "Day 4"
+  events:
+    - title: Lab Tours
+      time: "09:30 - 13:00"
+    - title: Lunch
+      time: "13:00 - 14:00"
+    - title: Guest Lecture 4
+      time: "14:00 - 15:00"
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+      type: Guest Lecture
+    - type: Parallel Session
+      title: Workshops & Tutorials
+      time: "15:00 - 17:00"
+    - title: Nations Evening
+      time: "19:00 - 24:00"
+- day: "Day 5"
+  events:
+    - type: Parallel Session
+      title: Student Talks
+      time: "09:30 - 11:00"
+    - title: Coffee Break
+      time: "11:00 - 11:30"
+    - title: Student Posters
+      time: "11:30 - 13:00"
+    - title: Lunch
+      time: "13:00 - 14:00"
+    - title: Guest Lecture 3 
+      time: "14:00 - 15:00"
+      speakers:
+        - name: "TBD"
+          role: "TBD"
+      location: TBD
+      room: TBD
+      type: Guest Lecture
+    - time: "15:00 - 17:00"
+      title: External Partners Networking Event
+    - title: Workshops & Tutorials
+      type: Parallel Session
+      time: "17:00 - 19:30"
+    - title: Dinner
+      time: "19:30 - 20:30"
+    - title: Talent Show
+      time: "20:30 - 24:00"
+- day: "Day 6"
+  events:
+    - title: Student Networking Event
+      time: "09:30 - 11:00"
+    - title: Coffee Break
+      time: "11:00 - 11:30"
+    - title: Closing Ceremony
+      time: "11:30 - 13:00"
+      speakers:
+        - name: TBD
+          role: "TBD"
+      location: TBD
+      room: TBD

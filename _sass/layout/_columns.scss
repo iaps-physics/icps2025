@@ -1,0 +1,49 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 700px));
+
+    // make every row the same height
+    grid-auto-rows: 1fr;
+
+    grid-gap: 1em;
+    margin-top: 5vh;
+    // align item horizontally at center;
+    justify-content: center;
+    justify-items: stretch;
+
+    // if screen it too small, make it one column
+    @media screen and (max-width: $large) {
+        grid-template-columns: repeat(1, minmax(300px, 700px));
+        grid-gap: 0.5em;
+        grid-auto-rows: auto;
+    }
+}
+
+
+.three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 700px));
+
+    // make every row the same height
+    grid-auto-rows: 1fr;
+
+    grid-gap: 1em;
+    margin-top: 5vh;
+    // align item horizontally at center;
+    justify-content: center;
+    justify-items: stretch;
+
+    // if screen it too small, make it one column
+    @media screen and (max-width: $large) {
+        grid-template-columns: repeat(1, minmax(300px, 700px));
+        grid-gap: 0.5em;
+        grid-auto-rows: auto;
+    }
+}
+
+
+
+

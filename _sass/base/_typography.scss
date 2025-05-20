@@ -1,0 +1,51 @@
+@use '../theme' as *;
+@use '../abstracts' as *;
+
+
+
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+.text-bold {
+    font-weight: 800;
+}
+
+.text-heavy {
+    font-weight: 900;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-accent {
+    color: $accent;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-smaller {
+    font-size: 70%;
+    line-height: 130%;
+}
+
+.text-tiny {
+    font-size: 70%;
+    line-height: 120%;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+

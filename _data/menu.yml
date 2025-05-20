@@ -1,0 +1,9 @@
+- text: "Home"
+  link: ""
+  icon: home
+- text: "Programme"
+  link: "programme"
+  icon: acute
+- text: "Organizing Committee"
+  link: "organizing_committee"
+  icon: diversity_3

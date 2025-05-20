@@ -1,0 +1,64 @@
+---
+layout: default
+title: Speakers
+---
+
+<div class="container-smaller">
+  <div class="two-columns">
+    {% assign i = 0%}
+
+  {% for person in site.data.speakers %}
+  {% if person.show %}
+<div class="card flex-column" style="align-items:stretch; justify-content: center; padding:1em;" x-data="{ expanded: false }" @click="expanded = ! expanded">
+
+
+  <span class="more" :class="expanded ? 'rotated' : ''">
+    <i class="material-symbols-rounded">expand_more</i>
+  </span>
+<div class="card-header flex-row" style="align-items: center; justify-content: flex-start;">
+
+  <div class="img-squiggly" style="max-width: clamp(80px, 20%, 130px)">
+    <img src="{{person.foto}}">
+  </div>
+  <div style="flex:1">
+    <div class="text-bold text-accent">{{person.name}}</div>
+    <div class="text-tiny text-black text-italic" style="margin-top: 0.1em;">{{person.role}}</div>
+    <div class="text-bold text-smaller text-black" style="margin-top: 0.2em;">{{person.session}}</div>
+  </div>
+</div>
+<div class="card-body" x-show="expanded" x-collapse>
+
+
+  {{person.descrizione}}
+</div>
+  </div>
+  {% assign i = i | plus: 1 %}
+  {% endif %}
+  {% endfor %}
+
+  {% assign even = i | modulo: 2%}
+
+  {% if even %}
+    {% assign k = 2 %}
+    {% else %}
+    {% assign k = 3 %}
+    {% endif %}
+
+    {% for j in (1..k) %}
+<div class="card coming-soon" style="padding:1em;" x-data="{ expanded: false }" @click="expanded = ! expanded">
+
+	<div class="card-header flex-column items-center justify-content-center" style="height: 100%">
+<span style="text-align: center; color: white; font-weight: 700">COMING SOON</span>
+    </div>
+
+</div>
+
+    {% endfor %}
+
+</div>
+<h3 style="text-align: center; color: white; margin-top: 2em;">
+   Big guests will be announced soon!
+</33>
+</div>
+
+</div>

@@ -1,0 +1,16 @@
+<div class="nav-menu">
+	<h2> ICPS 2025 </h2><!--<img src="{{site.url}}/{{site.data.generic.logo_colorato}}" style="margin-top:1em">-->
+
+	<ul>
+	{% for item in site.data.menu %}
+		<li class="{{item.grow}}">
+    <a href="{{item.link}}">
+        <div style="flex: 1;">{{item.text}}</div>
+        <div><i  style="flex: 0" class="material-symbols-rounded">{{item.icon}}</i></div>
+    </a>
+
+		</li>
+	{% endfor %}
+	</ul>
+	</div>
+
